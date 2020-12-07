@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="量价分析(一), MoliByte">
+    <meta name="keywords" content="Android Binder, MoliByte">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>量价分析(一) | MoliByte</title>
+    <title>Android Binder | MoliByte</title>
     <link rel="icon" type="image/png" href="../../../../favicon.png">
 
     <link rel="stylesheet" type="text/css" href="../../../../libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">量价分析(一)</h1>
+                    <h1 class="description center-align post-title">Android Binder</h1>
                 </div>
             </div>
         </div>
@@ -441,8 +441,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="../../../../tags/%E9%87%8F%E4%BB%B7%E5%88%86%E6%9E%90/">
-                                <span class="chip bg-color">量价分析</span>
+                            <a href="../../../../tags/Android/">
+                                <span class="chip bg-color">Android</span>
                             </a>
                         
                     </div>
@@ -453,8 +453,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="../../../../categories/VPA/" class="post-category">
-                                VPA
+                            <a href="../../../../categories/Android/" class="post-category">
+                                Android
                             </a>
                         
                     </div>
@@ -466,7 +466,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-25
+                    2020-12-04
                 </div>
                 
 
@@ -482,44 +482,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="主力机构是什么"><a href="#主力机构是什么" class="headerlink" title="主力机构是什么"></a>主力机构是什么</h3><blockquote>
+                <blockquote>
 <ul>
-<li>市场的参与者众多，我们这里只谈论两种：一个是操纵者；另一个是被操纵者。</li>
+<li>adb connect 127.0.0.1</li>
 </ul>
 </blockquote>
-<h3 id="主力机构的行为习惯和手段"><a href="#主力机构的行为习惯和手段" class="headerlink" title="主力机构的行为习惯和手段"></a>主力机构的行为习惯和手段</h3><blockquote>
+<blockquote>
 <ul>
-<li>他们买入点永远是区间的底部，出场永远是区间的顶部，或者说，他们出场的时候，一定是公众贪婪的时候，他们进场的时候一定是在公众恐慌的时候。比如他们在震荡时制造长阳，目的是在顶部抛售；他们制造长阴，目的是甩掉公众，并把公众因恐慌卖出的股票全部吸收。他们的行为极具隐蔽性和欺骗性，比如他们在吸筹时，他们在低价位让走势显得枯燥无味，目的是使公众因绝望而抛掉股票。</li>
-<li>CM不喜欢公众和他们一起买入。比如在价格进入牛市的初期，他们还是严控市场，让走势显得非常缓慢，成交也非常的清淡，目的是不让公众进场。如果做个比喻的话，CM是元帅，公众是士兵。当他们不需要公众冲锋的时候，会让走势很枯燥和没方向；反之当他们准备出逃的时候，他们需要公众去抢购。在价格将要到达他们设定的目标价位的时候，他们会让公众开户抢购股票，来转移他们的风险。</li>
-<li>要使用疲劳战术，让套在山顶上的买家在底部价位（他们吸筹的价格区）卖掉.使用震仓的方法，让价格突然大幅度下沉，把最坚定的买家也震出市场。</li>
+<li>adb devices<pre><code>  List of devices attached
+  127.0.0.1:5555  device
+  192.168.4.120:5555      device
+  emulator-5554   device</code></pre>
+</li>
 </ul>
 </blockquote>
-<h3 id="公众的分析习惯"><a href="#公众的分析习惯" class="headerlink" title="公众的分析习惯"></a>公众的分析习惯</h3><pre><code>●　严重依赖技术指标、新闻消息、传言、基本面。
+<blockquote>
+<ul>
+<li>adb -s emulator-5554  shell<br>所有进程信息<br>  $ ps<br>所有服务信息<br>  $ service list<br>Found 100 services:<br>0       carrier_config: [com.android.internal.telephony.ICarrierConfigLoader]<br>1       phone: [com.android.internal.telephony.ITelephony]<br>2       isms: [com.android.internal.telephony.ISms]<br>3       iphonesubinfo: [com.android.internal.telephony.IPhoneSubInfo]<br>4       simphonebook: [com.android.internal.telephony.IIccPhoneBook]<br>5       isub: [com.android.internal.telephony.ISub]<br>6       telecom: [com.android.internal.telecom.ITelecomService]<br>7       imms: [com.android.internal.telephony.IMms]<br>8       media_projection: [android.media.projection.IMediaProjectionManager]<br>9       launcherapps: [android.content.pm.ILauncherApps]<br>10      fingerprint: [android.hardware.fingerprint.IFingerprintService]<br>11      trust: [android.app.trust.ITrustManager]<br>12      media_router: [android.media.IMediaRouterService]<br>13      media_session: [android.media.session.ISessionManager]<br>14      restrictions: [android.content.IRestrictionsManager]<br>15      print: [android.print.IPrintManager]<br>16      graphicsstats: [android.view.IGraphicsStats]<br>17      assetatlas: [android.view.IAssetAtlas]<br>18      dreams: [android.service.dreams.IDreamManager]<br>19      commontime_management: []<br>20      samplingprofiler: []<br>21      diskstats: []<br>22      voiceinteraction: [com.android.internal.app.IVoiceInteractionManagerService]<br>23      appwidget: [com.android.internal.appwidget.IAppWidgetService]<br>24      backup: [android.app.backup.IBackupManager]<br>25      jobscheduler: [android.app.job.IJobScheduler]<br>26      serial: [android.hardware.ISerialManager]<br>27      usb: [android.hardware.usb.IUsbManager]<br>28      midi: [android.media.midi.IMidiManager]<br>29      DockObserver: []<br>30      audio: [android.media.IAudioService]<br>31      wallpaper: [android.app.IWallpaperManager]<br>32      dropbox: [com.android.internal.os.IDropBoxManagerService]<br>33      search: [android.app.ISearchManager]<br>34      country_detector: [android.location.ICountryDetector]<br>35      location: [android.location.ILocationManager]<br>36      devicestoragemonitor: []<br>37      notification: [android.app.INotificationManager]<br>38      updatelock: [android.os.IUpdateLock]<br>39      servicediscovery: [android.net.nsd.INsdManager]<br>40      connectivity: [android.net.IConnectivityManager]<br>41      rttmanager: [android.net.wifi.IRttManager]<br>42      wifiscanner: [android.net.wifi.IWifiScanner]<br>43      wifi: [android.net.wifi.IWifiManager]<br>44      wifip2p: [android.net.wifi.p2p.IWifiP2pManager]<br>45      netpolicy: [android.net.INetworkPolicyManager]<br>46      netstats: [android.net.INetworkStatsService]<br>47      network_score: [android.net.INetworkScoreService]<br>48      textservices: [com.android.internal.textservice.ITextServicesManager]<br>49      network_management: [android.os.INetworkManagementService]<br>50      clipboard: [android.content.IClipboard]<br>51      statusbar: [com.android.internal.statusbar.IStatusBarService]<br>52      device_policy: [android.app.admin.IDevicePolicyManager]<br>53      deviceidle: [android.os.IDeviceIdleController]<br>54      lock_settings: [com.android.internal.widget.ILockSettings]<br>55      uimode: [android.app.IUiModeManager]<br>56      mount: [IMountService]<br>57      accessibility: [android.view.accessibility.IAccessibilityManager]<br>58      input_method: [com.android.internal.view.IInputMethodManager]<br>59      input: [android.hardware.input.IInputManager]<br>60      window: [android.view.IWindowManager]<br>61      alarm: [android.app.IAlarmManager]<br>62      consumer_ir: [android.hardware.IConsumerIrService]<br>63      vibrator: [android.os.IVibratorService]<br>64      content: [android.content.IContentService]<br>65      account: [android.accounts.IAccountManager]<br>66      media.camera.proxy: [android.hardware.ICameraServiceProxy]<br>67      telephony.registry: [com.android.internal.telephony.ITelephonyRegistry]<br>68      scheduling_policy: [android.os.ISchedulingPolicyService]<br>69      webviewupdate: [android.webkit.IWebViewUpdateService]<br>70      usagestats: [android.app.usage.IUsageStatsManager]<br>71      battery: []<br>72      sensorservice: [android.gui.SensorServer]<br>73      processinfo: [android.os.IProcessInfoService]<br>74      permission: [android.os.IPermissionController]<br>75      cpuinfo: []<br>76      dbinfo: []<br>77      gfxinfo: []<br>78      meminfo: []<br>79      procstats: [com.android.internal.app.IProcessStats]<br>80      activity: [android.app.IActivityManager]<br>81      user: [android.os.IUserManager]<br>82      package: [android.content.pm.IPackageManager]<br>83      media.radio: [android.hardware.IRadioService]<br>84      media.sound_trigger_hw: [android.hardware.ISoundTriggerHwService]<br>85      media.audio_policy: [android.media.IAudioPolicyService]<br>86      media.camera: [android.hardware.ICameraService]<br>87      display: [android.hardware.display.IDisplayManager]<br>88      power: [android.os.IPowerManager]<br>89      appops: [com.android.internal.app.IAppOpsService]<br>90      batterystats: [com.android.internal.app.IBatteryStats]<br>91      batteryproperties: [android.os.IBatteryPropertiesRegistrar]<br>92      drm.drmManager: [drm.IDrmManagerService]<br>93      android.security.keystore: [android.security.IKeystoreService]<br>94      SurfaceFlinger: [android.ui.ISurfaceComposer]<br>95      android.hardware.fingerprint.IFingerprintDaemon: [android.hardware.fingerprint.IFingerprintDaemon]<br>96      android.service.gatekeeper.IGateKeeperService: [android.service.gatekeeper.IGateKeeperService]<br>97      media.resource_manager: [android.media.IResourceManagerService]<br>98      media.player: [android.media.IMediaPlayerService]<br>99      media.audio_flinger: [android.media.IAudioFlinger]</li>
+</ul>
+</blockquote>
+<h3 id="emulator"><a href="#emulator" class="headerlink" title="emulator"></a>emulator</h3><p>emulator -list-avds</p>
+<p>模拟器在 ~/.android/avd目录下</p>
 
-●　看到技术指标给出的信号决定买卖。
-
-●　没有危机管理方案，导致套牢。</code></pre>
-<h3 id="专业人士（聪明钱）的分析逻辑"><a href="#专业人士（聪明钱）的分析逻辑" class="headerlink" title="专业人士（聪明钱）的分析逻辑"></a>专业人士（聪明钱）的分析逻辑</h3><pre><code>●　不使用技术指标，不解读任何新闻消息，只使用价格、成交量和变化速度。
-
-●　对于表象信息（价量），通过市场自身行为和供求关系来解读走势。
-
-●　配合当时的大背景，做出结论或推断。
-
-●　使用危机管理，把风险降为最低。</code></pre>
-<h3 id="资深专家的市场分析的共同点"><a href="#资深专家的市场分析的共同点" class="headerlink" title="资深专家的市场分析的共同点"></a>资深专家的市场分析的共同点</h3><pre><code>●　他们都分析供求关系，并且持续分析买压和卖压的力量。
-
-●　他们都分析主力机构（CM）的操作意图。
-
-●　他们遵循吸筹和派发的循环走势。
-
-●　他们都在趋势开始之前已经行动。
-
-●　他们关注的细节往往被公众忽视，而这些细节是探知趋势方向的关键。</code></pre>
-<p>成功的交易员都分析供求关系，并且持续分析买压和卖压的力量。</p>
-<p>●　他们都分析主力机构（CM）的操作意图。<br>●　他们遵循吸筹和派发的循环走势。<br>●　他们都在趋势开始之前已经行动。<br>●　他们关注的细节往往被公众忽视，而这些细节是探知趋势方向的关键。</p>
-<h3 id="专业交易员眼里的价格和成交量"><a href="#专业交易员眼里的价格和成交量" class="headerlink" title="专业交易员眼里的价格和成交量"></a>专业交易员眼里的价格和成交量</h3><p>●　识别支撑和阻力。（用价格判断）<br>●　走势涨跌的速度—趋势线的角度。（用价格判断）<br>●　识别超买或超卖行情。（用成交量和价格判断）<br>●　识别在某个阶段谁在控盘。（用价格和成交量判断）<br>●　在顶部，识别CM[1]制造狂热，吸引公众入市。（用成交量判断）<br>●　在底部，识别CM造恐慌，迫使被套的买家卖出。（用成交量判断）<br>●　利用供求关系原理判断支撑和阻力的质量。（用成交量判断）<br>●　识别CM吸筹或派发的开始到结束。（用成交量判断）<br>●　识别CM是否正在吸收阻力上的卖盘，并判断是否会突破。（用成交量判断）</p>
-<h2 id="量价分析定理"><a href="#量价分析定理" class="headerlink" title="量价分析定理"></a>量价分析定理</h2><p>●　趋势的动力来自于供求关系的不平衡（供求关系原则）。<br>●　趋势形成之前需要准备过程（因果关系原则）。<br>●　成交量的增长没有使价格大幅增长，这是走势停止行为（努力和效果原则）。</p>
-<h2 id="没有看到牛市前的准备过程，不能抄底。"><a href="#没有看到牛市前的准备过程，不能抄底。" class="headerlink" title="没有看到牛市前的准备过程，不能抄底。"></a>没有看到牛市前的准备过程，不能抄底。</h2>
             </div>
             <hr/>
 
@@ -582,8 +566,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="../../../../tags/%E9%87%8F%E4%BB%B7%E5%88%86%E6%9E%90/">
-                                    <span class="chip bg-color">量价分析</span>
+                                <a href="../../../../tags/Android/">
+                                    <span class="chip bg-color">Android</span>
                                 </a>
                             
                         </div>
@@ -757,13 +741,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="../vpa02/">
+                <a href="../../06/CM%E6%B4%BE%E5%8F%91%E8%BF%87%E7%A8%8B/">
                     <div class="card-image">
                         
                         
-                        <img src="../../../../medias/featureimages/5.jpg" class="responsive-img" alt="量价分析(二)">
+                        <img src="../../../../medias/featureimages/1.jpg" class="responsive-img" alt="如何识别主力的派发意图？">
                         
-                        <span class="card-title">量价分析(二)</span>
+                        <span class="card-title">如何识别主力的派发意图？</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -774,7 +758,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-25
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-12-06
                         </span>
                         <span class="publish-author">
                             
@@ -806,29 +790,33 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="../../24/java_design/">
+                <a href="../%E5%A8%81%E7%A7%91%E5%A4%AB%E7%AC%94%E8%AE%B0/">
                     <div class="card-image">
                         
                         
-                        <img src="../../../../medias/featureimages/9.jpg" class="responsive-img" alt="Java 设计模式">
+                        <img src="../../../../medias/featureimages/5.jpg" class="responsive-img" alt="威科夫量价分析">
                         
-                        <span class="card-title">Java 设计模式</span>
+                        <span class="card-title">威科夫量价分析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            威科夫量价笔记
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            MoliByte
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="../../../../categories/VPA/" class="post-category">
+                                    VPA
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -836,12 +824,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="../../../../tags/Java/">
-                        <span class="chip bg-color">Java</span>
-                    </a>
-                    
-                    <a href="../../../../tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">
-                        <span class="chip bg-color">设计模式</span>
+                    <a href="../../../../tags/%E9%87%8F%E4%BB%B7%E5%88%86%E6%9E%90/">
+                        <span class="chip bg-color">量价分析</span>
                     </a>
                     
                 </div>
