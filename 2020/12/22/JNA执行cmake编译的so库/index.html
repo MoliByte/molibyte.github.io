@@ -29,7 +29,7 @@
 
     <script src="../../../../libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="../../../../css/prism-xonokai.css" type="text/css"><script src="../../../../js/prism.js"></script></head>
 
 
 
@@ -477,7 +477,7 @@
 <a id="more"></a>
 
 <h4 id="项目结构如图"><a href="#项目结构如图" class="headerlink" title="项目结构如图"></a>项目结构如图</h4><p><img src="/images/pro_struct_001.png"></p>
-<h4 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h4><pre class="line-numbers language-none"><code class="language-none">#include &lt;stdio.h&gt;
+<h4 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h4><pre class="language-none"><code class="language-none">#include &lt;stdio.h&gt;
 #include &lt;stdio.h&gt;
 
 int add(int a,int b);
@@ -488,9 +488,9 @@ int minus(int a,int b);
 
 int divide(int a,int b);
 
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 
-<h4 id="实现文件"><a href="#实现文件" class="headerlink" title="实现文件"></a>实现文件</h4><pre class="line-numbers language-none"><code class="language-none">#include &quot;c_fun.h&quot;
+<h4 id="实现文件"><a href="#实现文件" class="headerlink" title="实现文件"></a>实现文件</h4><pre class="language-[c]" data-language="[c]"><code class="language-[c]">#include &quot;c_fun.h&quot;
 #include &lt;jni.h&gt;
 #include &lt;stdio.h&gt;
 &#x2F;&#x2F; cc -c fun_main.c  &#x3D;&gt; fun_main.o
@@ -517,9 +517,9 @@ int divide(int a,int b)&#123;
         return -1;
     &#125;
 	return a &#x2F; b;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;</code></pre>
 
-<h4 id="CMakeLists-txt"><a href="#CMakeLists-txt" class="headerlink" title="CMakeLists.txt"></a>CMakeLists.txt</h4><pre class="line-numbers language-none"><code class="language-none">cmake_minimum_required(VERSION 3.18)
+<h4 id="CMakeLists-txt"><a href="#CMakeLists-txt" class="headerlink" title="CMakeLists.txt"></a>CMakeLists.txt</h4><pre class="language-none"><code class="language-none">cmake_minimum_required(VERSION 3.18)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -563,7 +563,7 @@ add_library(CFun MODULE $&#123;SRC_LIST_CPP&#125; $&#123;SRC_LIST_C&#125;  $&#12
 
 # STATIC &#x3D;&gt; 为.a文件
 #add_library(CFun STATIC $&#123;SRC_LIST_CPP&#125; $&#123;SRC_LIST_C&#125; $&#123;LINK_JNI_DIR&#125; $&#123;LINK_JMI_DIR&#125;)
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</code></pre>
 
 <blockquote>
 <ul>
@@ -571,16 +571,16 @@ add_library(CFun MODULE $&#123;SRC_LIST_CPP&#125; $&#123;SRC_LIST_C&#125;  $&#12
 </ul>
 </blockquote>
 <h4 id="Java-JNA调用该so动态库"><a href="#Java-JNA调用该so动态库" class="headerlink" title="Java JNA调用该so动态库"></a>Java JNA调用该so动态库</h4><ol>
-<li>添加依赖jar<pre class="line-numbers language-none"><code class="language-none">&lt;dependency&gt;
+<li>添加依赖jar<pre class="language-none"><code class="language-none">&lt;dependency&gt;
     &lt;groupId&gt;net.java.dev.jna&lt;&#x2F;groupId&gt;
     &lt;artifactId&gt;jna&lt;&#x2F;artifactId&gt;
     &lt;version&gt;5.3.1&lt;&#x2F;version&gt;
-&lt;&#x2F;dependency&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&lt;&#x2F;dependency&gt;</code></pre>
 
 </li>
 </ol>
 <p>JnaLibrary.java =&gt; 申明接口与so对应关系</p>
-<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">import com.sun.jna.Library;
+<pre class="language-Java" data-language="Java"><code class="language-Java">import com.sun.jna.Library;
 import com.sun.jna.Native;
 
 public interface JnaLibrary extends Library &#123;
@@ -590,10 +590,10 @@ public interface JnaLibrary extends Library &#123;
     int minus(int a,int b);
     int divide(int a,int b);
     String getSalt();
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;</code></pre>
 
 <p>JNAMain.java</p>
-<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">public class JnaMain &#123;
+<pre class="language-Java" data-language="Java"><code class="language-Java">public class JnaMain &#123;
     public static void main(String args[])&#123;
         int a &#x3D; 200,b&#x3D;100;
         int add &#x3D; JnaLibrary.INSTANCE.add(a, b);
@@ -609,7 +609,7 @@ public interface JnaLibrary extends Library &#123;
         &#x2F;&#x2F; out: 2
         System.out.println(divide);
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+&#125;</code></pre>
             </div>
             <hr/>
 

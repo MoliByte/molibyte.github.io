@@ -29,7 +29,7 @@
 
     <script src="../../../../libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/css/prism-xonokai.css" type="text/css"><script src="/js/prism.js"></script></head>
 
 
 
@@ -482,12 +482,11 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Android-View-的绘制流程"><a href="#Android-View-的绘制流程" class="headerlink" title="Android View 的绘制流程"></a>Android View 的绘制流程</h3><pre><code>●　-- Activity                               
-        ●　-- PhoneWindow   // 是 Android 系统中最基本的窗口系统，每个 Activity 会创建一个。                       
-            ●　-- DecorView    // 是 Activity 和 View 系统交互的接口。DecorView本质上是一个FrameLayout是Activity 中所有 View 的祖先           
-               ●　 -- TitleActionBar               
-               ●   -- FrameLayout(ViewGroup)       </code></pre>
-
+                <h3 id="Android-View-的绘制流程"><a href="#Android-View-的绘制流程" class="headerlink" title="Android View 的绘制流程"></a>Android View 的绘制流程</h3><pre class="language-none"><code class="language-none">●　-- Activity                               
+		●　-- PhoneWindow   &#x2F;&#x2F; 是 Android 系统中最基本的窗口系统，每个 Activity 会创建一个。					   
+			●　-- DecorView	&#x2F;&#x2F; 是 Activity 和 View 系统交互的接口。DecorView本质上是一个FrameLayout是Activity 中所有 View 的祖先		   
+			   ●　 -- TitleActionBar			   
+			   ●   -- FrameLayout(ViewGroup)	   </code></pre>
             </div>
             <hr/>
 
